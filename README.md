@@ -7,14 +7,15 @@ This Python script updates specific properties in a JSON file containing game ch
 
 For each object where:
 - `$type` is `"Data.GameObject.Character.TalentData, Assembly-CSharp"`, **and**
-- `"contract"` is either empty (`""`) or missing
+- `"contract"` is either empty (`""`) or missing, **and**
+- `"id"` is **not** `16` - This is the ID for Lydia Globe and their rating and limit has been fixed since patch 0.8.13EA so we don't want to update them
 
 It will:
-- Randomly update each value in the `"professions"` dictionary to a float between `0` and `1`.
-- Set `"limit"` to a float between the maximum value in `"professions"` and `1`.
-- Set `"selfEsteem"` based on the highest `"professions"` value:
-  - If max value > `0.5`: `"selfEsteem"` is between `0.5` and `1`
-  - If max value ≤ `0.5`: `"selfEsteem"` is between `0.0001` and `0.49999`
+- Randomly update each value in the `"professions"` dictionary to a float between **0.1** and **0.99**
+- Set `"limit"` to a float between the highest `"professions"` value and **0.99**
+- Set `"selfEsteem"` to a float between **-0.9** and **0.9**, biased toward values between **-0.3** and **0.4**
+
+---
 
 ## ✅ Requirements
 
