@@ -7,31 +7,15 @@ This Python script updates specific properties in a JSON file containing game ch
 
 For each object where:
 - `$type` is `"Data.GameObject.Character.TalentData, Assembly-CSharp"`, **and**
-- `"contract"` is either empty (`""`) or missing
+- `"state"` is `0` - correct identifier for if a character is a free agent (shoutout to @skripped on Discord for this!)
+- `"id"` is **not** `16` - This is the ID for Lydia Globe and their rating and limit has been fixed since patch 0.8.13EA so we don't want to update them
 
 It will:
-- Randomly update each value in the `"professions"` dictionary to a float between `0` and `1`.
-- Set `"limit"` to a float between the maximum value in `"professions"` and `1`.
-- Set `"selfEsteem"` based on the highest `"professions"` value:
-  - If max value > `0.5`: `"selfEsteem"` is between `0.5` and `1`
-  - If max value ≤ `0.5`: `"selfEsteem"` is between `0.0001` and `0.49999`
+- Randomly update each value in the `"professions"` dictionary to a float between **0.1** and **0.99**
+- Set `"limit"` to a float between the highest `"professions"` value and **0.99**
+- Set `"selfEsteem"` to a float between **-0.9** and **0.9**, biased toward values between **-0.3** and **0.4**
 
-
-## 📌 Notes
-* Be sure to back up your original JSON file before running the script if you need to retain the original data.
-* You can run this script against any save file from the very start of the game.
-* **HOWEVER:** This may also impact the quality of staff at other movie studios as the game appears to make all staff "free agents" when the file is created by the game, and then assigns them at random as the game progresses (This is being investigated to confirm this theory). 
-* **RECOMMENDED:** I recommend you wait until you have casting office and the ability to hire all staff types before running this script.
-
-
-## 📁 Input
-
-A JSON file named `savedGame.json` should be present in the same directory as the script. It is recommended that you run this script outside of your saved games directory and make a copy of your saved game file before running this script.
-
-## 💾 Output
-
-The script overwrites the original `savedGame.json` with updated content. The structure is preserved, and only qualifying objects are modified. Once modified, copy the `savedGame.json` back into your saved games directory, rename it back to your original studio name, and then reload the saved file.
-
+---
 
 ## ✅ Requirements
 
@@ -39,29 +23,33 @@ The script overwrites the original `savedGame.json` with updated content. The st
 No external dependencies are required.
 
 
-## 🪟 Installing Python on Windows (via Microsoft Store)
-
-The simplest way to install Python on Windows is through the Microsoft Store:
-
-1. Open the **Microsoft Store** from your Start menu.
-2. Search for **"Python"**.
-3. Choose the latest version of **Python 3.x** published by the **Python Software Foundation**.
-4. Click **Get** or **Install**.
-5. Once installed, open Command Prompt and verify the installation:
-   ```bash
-   python --version
-6. You should see something like Python 3.11.x.
-   `✅ Python installed via the Microsoft Store is automatically added to your system PATH.`
-
-
 ## 🚀 How to Run the Script
 
-1. Download or copy the script into a file named hollypy.py.
-2. Copy your save game file that you want to edit, copy it to the same directory as the `hollypy.py` file, rename the `.json` file to `savedGame.json`.
-3. Open Command Prompt in that folder:
-    * Press Shift + Right Click in the folder background
-    * Choose "Open PowerShell window here" or "Open Command Window here"
-4. Run the script: `python hollypy.py`
-5. Once complete, your savedGame.json file will be updated with the changes.
-6. Copy the updated `savedGame.json` file to your saved games directory and rename it back to your original save game file. **NOTE:** Ensure you keep a copy of your original save game, don't overwrite this the original save game with this update version unless you have a backup of the original save game file stored somewhere.
-7. in Hollywood Animal game, load the updated saved game
+1. Download latest [release package](https://github.com/caleuanhopkins/holly-randomiser/releases) and extract the `holly-randomiser` directory somewhere
+2. Inside the extract directorty, run the script: `python hollypy.py`
+3. When you run the script, you’ll be prompted to enter:
+   * Your **Windows username** (e.g., `john` if your path is `C:\Users\john`)
+   * The **save file name** (e.g., `Save1`)
+   * Together, these will set the save game file path to: `C:\Users\john\AppData\LocalLow\Weappy\Holly\Saves\Profiles\0\Save1.json`
+   ```bash
+      Enter your Windows username: john
+      Enter the saved game filename (e.g., Save1): Save1
+      📁 Full file path: C:\Users\john\AppData\LocalLow\Weappy\Holly\Saves\Profiles\0\Save1.json
+      Is this correct? (Y/N):
+4. After entering your username and save file name, you'll see the full path displayed. You'll be asked to confirm it's correct before any changes are made.
+   * When confirmed, a copy of your original saved game will be created and saved in the same directory with `_backup` appended to the file name, should you need to recover the original saved game file
+5. Once done, the script will update the saved game file and override the save game file (remember a `_backup` version of your saved is in the directory for recovery purposes)
+6. In Hollywood Animal game, load the updated saved game
+
+## 📌 Notes
+* You can run this script against any save file from the very start of the game.
+* **HOWEVER:** This may also impact the quality of staff at other movie studios as the game appears to make all staff "free agents" when the file is created by the game, and then assigns them at random as the game progresses (This is being investigated to confirm this theory). 
+* **RECOMMENDED:** I recommend you wait until you have casting office and the ability to hire all staff types before running this script.
+
+## 🪟 Installing Python on Windows (via official installer)
+
+1. Go to the official [Python downloads page](https://www.python.org/downloads/).
+2. Click **Download Python 3.x.x** for Windows.
+3. Run the downloaded `.exe` installer.
+4. **Important:** Before clicking **Install Now**, check the box that says: `✅ Add Python 3.x to PATH`
+5. After installation, verify Python is installed by opening **Command Prompt** and running: `python --version`. You should see something like Python 3.x.x.
