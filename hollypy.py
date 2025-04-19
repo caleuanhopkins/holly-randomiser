@@ -40,10 +40,8 @@ def update_talent_data(obj):
             if obj.get("id") == 16:
                 return
 
-            contract = obj.get("contract", None)
-
-            # Only update if contract is empty or null
-            if contract in ("", None):
+            # Only update if character is a free agent, big thanks to @skripped for pointing this out!
+            if obj.get("state") == 0:
                 # Update 'professions' subproperty values (0.1 to 0.9)
                 if isinstance(obj.get("professions"), dict):
                     max_value = 0

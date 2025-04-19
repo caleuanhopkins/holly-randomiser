@@ -7,7 +7,7 @@ This Python script updates specific properties in a JSON file containing game ch
 
 For each object where:
 - `$type` is `"Data.GameObject.Character.TalentData, Assembly-CSharp"`, **and**
-- `"contract"` is either empty (`""`) or missing, **and**
+- `"state"` is `0` - correct identifier for if a character is a free agent (shoutout to @skripped on Discord for this!)
 - `"id"` is **not** `16` - This is the ID for Lydia Globe and their rating and limit has been fixed since patch 0.8.13EA so we don't want to update them
 
 It will:
