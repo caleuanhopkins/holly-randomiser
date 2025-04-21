@@ -1,9 +1,15 @@
 # Hollywood Animal - Free Agents Randomiser
 
-This Python script updates specific properties in a JSON file containing game character talent data. It is designed to target objects with a specific `$type`, and only modifies them if their `"contract"` field is empty.
+A simple script to help introduce more character randomisation with Weappy's upcoming [Hollywood Animal](https://weappy-studio.com/hollywood-animal/) strategy game. 
 
+<a href="https://www.buymeacoffee.com/caleuanhopkins"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=caleuanhopkins&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## 🔧 What It Does
+
+### 📖 TLDR
+Currently in the game's pre-release state, the character randomisation when new games start are limited especially in important in-game post production roles. This script is designed to help bring a little bit more balance in these roles but also provide freshness when re-rolling new games.
+
+### 💻 Techy Details
 
 For each object where:
 - `$type` is `"Data.GameObject.Character.TalentData, Assembly-CSharp"`, **and**
