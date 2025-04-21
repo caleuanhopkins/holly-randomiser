@@ -173,3 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 savedGame.json
+test_saved_game_backup.json
+updated.json

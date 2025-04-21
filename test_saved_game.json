@@ -1,0 +1,406 @@
+{
+    "currentMeta": {
+        "firstSaveVersion": "0.0.1",
+        "lastSaveVersion": "0.0.1",
+        "timestamp": "2025-04-17T20:10:15.0841655+01:00",
+        "sameVersionPathesCalled": null
+    },
+    "stateJson": {
+        "characters": [
+            {
+                "$type": "Data.GameObject.Character.TalentData, Assembly-CSharp",
+                "movies": {},
+                "activeOrPlannedMovies": {},
+                "labels": [
+                    "IMMORTAL"
+                ],
+                "whiteTags": {},
+                "whiteTagsNEW": {
+                    "INDOOR": {
+                        "overallValues": [
+                            {
+                                "movieId": 0,
+                                "sourceType": 0,
+                                "value": 0.2,
+                                "dateAdded": "0001-01-01T00:00:00"
+                            }
+                        ],
+                        "id": "INDOOR",
+                        "dateAdded": "1927-11-25T00:00:00",
+                        "movieId": 0,
+                        "value": 0.2,
+                        "IsOverall": false
+                    },
+                    "OUTDOOR": {
+                        "overallValues": [
+                            {
+                                "movieId": 0,
+                                "sourceType": 0,
+                                "value": 0.3,
+                                "dateAdded": "0001-01-01T00:00:00"
+                            }
+                        ],
+                        "id": "OUTDOOR",
+                        "dateAdded": "1928-11-10T00:00:00",
+                        "movieId": 0,
+                        "value": 0.3,
+                        "IsOverall": false
+                    }
+                },
+                "blackTags": [],
+                "recentTags": [],
+                "recentTagsNEW": [],
+                "fakeRecents": [],
+                "recentRolesForFakeFilmographyNEW": [],
+                "scandals": [],
+                "nextTagResearchDurationRandomOffset": -1,
+                "lastResearchedTagCathegory": "",
+                "lastDateScriptGenerated": "0001-01-01T00:00:00",
+                "skillBeforeWriting": 0.0,
+                "aSins": [],
+                "lastVacation": "0001-01-01T00:00:00",
+                "pHChkFrom": 0,
+                "processHistory": [],
+                "nominations": [],
+                "polluxes": [],
+                "customName": null,
+                "portraitBaseId": 57,
+                "imprisonedSince": "01-01-0001",
+                "professions": {
+                    "Cinematographer": 0.7217
+                },
+                "limit": 0.73,
+                "mood": 0.62,
+                "attitude": 0.4,
+                "selfEsteem": 0.39968,
+                "xp": 4500,
+                "contract": null,
+                "previousContract": null,
+                "dossier": null,
+                "lastDossierUpdate": null,
+                "studioId": null,
+                "employmentHistory": [],
+                "offendedStateWasShown": false,
+                "offenceHistory": [],
+                "negotiationBonuses": [],
+                "temporaryStates": [],
+                "causeOfLeave": 0,
+                "killerId": null,
+                "isShady": false,
+                "sexualPreference": 0,
+                "limitations": 0,
+                "readinessForTricks": 2,
+                "willRevoverMoodAttitudeOnServicesRegain": false,
+                "prefIlGift": 0,
+                "tillNextGft": 0,
+                "strikes": 0,
+                "giftHistory": [],
+                "delayedImprisonmentDays": 0,
+                "wasImprisoned": false,
+                "leftPrisonDate": "0001-01-01T00:00:00",
+                "isImmune": false,
+                "vividImageExirationDate": "0001-01-01T00:00:00",
+                "sophisticatedImageExirationDate": "0001-01-01T00:00:00",
+                "isProspectiveTalent": false,
+                "daysWithSuicideLowMood": 0,
+                "futureDeathDate": "0001-01-01T00:00:00",
+                "futureCauseOfDeath": 0,
+                "id": 10,
+                "firstNameId": "938",
+                "lastNameId": "939",
+                "birthDate": "25-07-1877",
+                "deathDate": "01-01-0001",
+                "gender": 0,
+                "type": 1,
+                "biography": {
+                    "currentMarriageId": 8,
+                    "marriageHistory": [
+                        8
+                    ],
+                    "childrenIds": [
+                        1019
+                    ],
+                    "parentIds": [],
+                    "lastBirth": "27-01-1928",
+                    "marriageUnchecked": true,
+                    "birthUnchecked": true
+                },
+                "state": 0,
+                "causeOfDeath": 0,
+                "nationality": 0
+            },
+            {
+                "$type": "Data.GameObject.Character.TalentData, Assembly-CSharp",
+                "movies": {},
+                "activeOrPlannedMovies": {},
+                "labels": [
+                    "PERFECTIONIST",
+                    "IMMORTAL"
+                ],
+                "whiteTags": {},
+                "whiteTagsNEW": {},
+                "blackTags": [],
+                "recentTags": [],
+                "recentTagsNEW": [],
+                "fakeRecents": [],
+                "recentRolesForFakeFilmographyNEW": [],
+                "scandals": [],
+                "nextTagResearchDurationRandomOffset": -1,
+                "lastResearchedTagCathegory": "",
+                "lastDateScriptGenerated": "0001-01-01T00:00:00",
+                "skillBeforeWriting": 0.0,
+                "aSins": [],
+                "lastVacation": "0001-01-01T00:00:00",
+                "pHChkFrom": 0,
+                "processHistory": [],
+                "nominations": [],
+                "polluxes": [],
+                "customName": null,
+                "portraitBaseId": 3,
+                "imprisonedSince": "01-01-0001",
+                "professions": {
+                    "Actor": 0.659
+                },
+                "limit": 0.8552,
+                "mood": 0.23,
+                "attitude": 0.66,
+                "selfEsteem": 0.85398,
+                "xp": 375,
+                "contract": null,
+                "previousContract": null,
+                "dossier": null,
+                "lastDossierUpdate": null,
+                "studioId": null,
+                "employmentHistory": [],
+                "offendedStateWasShown": false,
+                "offenceHistory": [],
+                "negotiationBonuses": [],
+                "temporaryStates": [],
+                "causeOfLeave": 0,
+                "killerId": null,
+                "isShady": false,
+                "sexualPreference": 0,
+                "limitations": 0,
+                "readinessForTricks": 2,
+                "willRevoverMoodAttitudeOnServicesRegain": false,
+                "prefIlGift": 0,
+                "tillNextGft": 0,
+                "strikes": 0,
+                "giftHistory": [],
+                "delayedImprisonmentDays": 0,
+                "wasImprisoned": false,
+                "leftPrisonDate": "0001-01-01T00:00:00",
+                "isImmune": false,
+                "vividImageExirationDate": "0001-01-01T00:00:00",
+                "sophisticatedImageExirationDate": "0001-01-01T00:00:00",
+                "isProspectiveTalent": false,
+                "daysWithSuicideLowMood": 0,
+                "futureDeathDate": "0001-01-01T00:00:00",
+                "futureCauseOfDeath": 0,
+                "id": 16,
+                "firstNameId": "947",
+                "lastNameId": "914",
+                "birthDate": "27-11-1886",
+                "deathDate": "01-01-0001",
+                "gender": 1,
+                "type": 1,
+                "biography": {
+                    "currentMarriageId": 1,
+                    "marriageHistory": [
+                        1
+                    ],
+                    "childrenIds": [
+                        1001,
+                        1002
+                    ],
+                    "parentIds": [],
+                    "lastBirth": "19-12-1912",
+                    "marriageUnchecked": true,
+                    "birthUnchecked": true
+                },
+                "state": 64,
+                "causeOfDeath": 0,
+                "nationality": 0
+            },
+            {
+                "$type": "Data.GameObject.Character.TalentData, Assembly-CSharp",
+                "movies": {},
+                "activeOrPlannedMovies": {},
+                "labels": [
+                    "IMMORTAL"
+                ],
+                "whiteTags": {},
+                "whiteTagsNEW": {},
+                "blackTags": [],
+                "recentTags": [],
+                "recentTagsNEW": [
+                    {
+                        "id": "DRAMA",
+                        "dateAdded": "1927-03-06T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "COMEDY",
+                        "dateAdded": "1927-05-13T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "THRILLER",
+                        "dateAdded": "1927-07-24T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "ROMANCE",
+                        "dateAdded": "1927-09-27T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "ROMANCE",
+                        "dateAdded": "1927-12-19T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_STRICT_PARENT",
+                        "dateAdded": "1928-02-16T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_LOVE_INTEREST",
+                        "dateAdded": "1928-04-20T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_FEMME_FATALE",
+                        "dateAdded": "1928-07-13T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_DAMSEL_IN_DISTRESS",
+                        "dateAdded": "1928-09-30T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_DAMSEL_IN_DISTRESS",
+                        "dateAdded": "1928-12-13T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    }
+                ],
+                "fakeRecents": [],
+                "recentRolesForFakeFilmographyNEW": [
+                    {
+                        "id": "SUPPORTINGCHARACTER_STRICT_PARENT",
+                        "dateAdded": "1927-06-08T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_LOVE_INTEREST",
+                        "dateAdded": "1927-11-06T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_FEMME_FATALE",
+                        "dateAdded": "1928-04-21T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_DAMSEL_IN_DISTRESS",
+                        "dateAdded": "1928-09-23T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    },
+                    {
+                        "id": "SUPPORTINGCHARACTER_DAMSEL_IN_DISTRESS",
+                        "dateAdded": "1928-12-23T00:00:00",
+                        "movieId": 0,
+                        "value": 1.0
+                    }
+                ],
+                "scandals": [],
+                "nextTagResearchDurationRandomOffset": -1,
+                "lastResearchedTagCathegory": "",
+                "lastDateScriptGenerated": "0001-01-01T00:00:00",
+                "skillBeforeWriting": 0.0,
+                "aSins": [],
+                "lastVacation": "0001-01-01T00:00:00",
+                "pHChkFrom": 0,
+                "processHistory": [],
+                "nominations": [],
+                "polluxes": [],
+                "customName": null,
+                "portraitBaseId": 85,
+                "imprisonedSince": "01-01-0001",
+                "professions": {
+                    "Actor": 0.3532
+                },
+                "limit": 0.395,
+                "mood": 0.7,
+                "attitude": 0.5,
+                "selfEsteem": 0.4747,
+                "xp": 0,
+                "contract": null,
+                "previousContract": null,
+                "dossier": null,
+                "lastDossierUpdate": null,
+                "studioId": null,
+                "employmentHistory": [],
+                "offendedStateWasShown": false,
+                "offenceHistory": [],
+                "negotiationBonuses": [],
+                "temporaryStates": [],
+                "causeOfLeave": 0,
+                "killerId": null,
+                "isShady": false,
+                "sexualPreference": 0,
+                "limitations": 0,
+                "readinessForTricks": 2,
+                "willRevoverMoodAttitudeOnServicesRegain": false,
+                "prefIlGift": 0,
+                "tillNextGft": 0,
+                "strikes": 0,
+                "giftHistory": [],
+                "delayedImprisonmentDays": 0,
+                "wasImprisoned": false,
+                "leftPrisonDate": "0001-01-01T00:00:00",
+                "isImmune": false,
+                "vividImageExirationDate": "0001-01-01T00:00:00",
+                "sophisticatedImageExirationDate": "0001-01-01T00:00:00",
+                "isProspectiveTalent": false,
+                "daysWithSuicideLowMood": 0,
+                "futureDeathDate": "0001-01-01T00:00:00",
+                "futureCauseOfDeath": 0,
+                "id": 12,
+                "firstNameId": "942",
+                "lastNameId": "943",
+                "birthDate": "17-08-1897",
+                "deathDate": "01-01-0001",
+                "gender": 1,
+                "type": 1,
+                "biography": {
+                    "currentMarriageId": -1,
+                    "marriageHistory": [],
+                    "childrenIds": [],
+                    "parentIds": [],
+                    "lastBirth": "01-01-0001",
+                    "marriageUnchecked": true,
+                    "birthUnchecked": true
+                },
+                "state": 64,
+                "causeOfDeath": 0,
+                "nationality": 0
+            }
+        ]
+    }
+}
