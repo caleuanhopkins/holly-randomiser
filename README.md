@@ -59,3 +59,17 @@ No external dependencies are required.
 3. Run the downloaded `.exe` installer.
 4. **Important:** Before clicking **Install Now**, check the box that says: `✅ Add Python 3.x to PATH`
 5. After installation, verify Python is installed by opening **Command Prompt** and running: `python --version`. You should see something like Python 3.x.x.
+
+## 🛠️ Development
+**Running Tests**
+1. Install development requirements (if you haven't already):
+   ```
+   pip install -r dev-requirements.txt
+2. Run all tests using pytest:
+   ```
+   pytest
+   ```
+   This will automatically discover and run any test files that follow the pattern test_*.py.
+3. **Optional: Run with coverage report** (if using pytest-cov):
+   ```
+   pytest --cov
