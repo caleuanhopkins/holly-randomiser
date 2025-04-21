@@ -2,6 +2,9 @@
 
 A simple script to help introduce more character randomisation with Weappy's upcoming [Hollywood Animal](https://weappy-studio.com/hollywood-animal/) strategy game. 
 
+<!-- Pytest Coverage Comment:Begin -->
+<!-- Pytest Coverage Comment:End -->
+
 <a href="https://www.buymeacoffee.com/caleuanhopkins"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=caleuanhopkins&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## 🔧 What It Does

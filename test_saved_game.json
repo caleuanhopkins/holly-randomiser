@@ -67,12 +67,12 @@
                 "portraitBaseId": 57,
                 "imprisonedSince": "01-01-0001",
                 "professions": {
-                    "Cinematographer": 0.9768
+                    "Cinematographer": 0.7217
                 },
-                "limit": 0.9893,
+                "limit": 0.73,
                 "mood": 0.62,
                 "attitude": 0.4,
-                "selfEsteem": -0.47895,
+                "selfEsteem": 0.39968,
                 "xp": 4500,
                 "contract": null,
                 "previousContract": null,
