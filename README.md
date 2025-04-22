@@ -4,6 +4,7 @@ A simple script to help introduce more character randomisation with Weappy's upc
 
 <!-- README.md -->
 [![pycoverage workflow](https://github.com/caleuanhopkins/holly-randomiser/actions/workflows/python.yml/badge.svg?branch=main)](https://github.com/caleuanhopkins/holly-randomiser/actions/workflows/python.yml)
+[![codecov](https://codecov.io/gh/caleuanhopkins/holly-randomiser/graph/badge.svg?token=B2YSVL6B03)](https://codecov.io/gh/caleuanhopkins/holly-randomiser)
 
 <a href="https://www.buymeacoffee.com/caleuanhopkins"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=caleuanhopkins&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
