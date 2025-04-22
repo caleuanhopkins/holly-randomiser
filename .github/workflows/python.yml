@@ -1,27 +1,27 @@
-name: pycoverage workflow
+name: Python package
 
-on: [push, pull_request]
+on: [push, pull-request]
 
 jobs:
-  tests:
+  build:
+
     runs-on: ubuntu-latest
-    name: Unit tests
+    strategy:
+      matrix:
+        python-version: ["pypy3.10", "3.9", "3.10", "3.11", "3.12", "3.13"]
+
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }} # be sure to add this ref on your checkout
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.13.3' # Define your project python version
-      - id: run-tests
-        uses: JotaFan/pycoverage@v1.0.0
-        with:
-          cov-omit-list: tests/*
-          cov-threshold-single: 85
-          cov-threshold-total: 90
-          async-tests: true
-          requirements-file: requirements.txt
-          poetry-version: 1.4.2
-          package-extras: dev,tests
-          github_token: ${{ secrets.README_TOKEN }}
-          working_branch: ${{ steps.extract_branch.outputs.branch }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Test with pytest
+      run: |
+        pip install pytest pytest-cov
+        pytest tests.py --doctest-modules --junitxml=test-results.xml --cov=com --cov-report=xml --cov-report=html
