@@ -22,5 +22,5 @@ jobs:
           async-tests: true
           poetry-version: 1.4.2
           package-extras: dev,tests
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.README_TOKEN }}
           working_branch: ${{ steps.extract_branch.outputs.branch }}
