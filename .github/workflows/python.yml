@@ -2,6 +2,7 @@ name: Run tests and upload coverage
 
 on: 
   push
+  pull_request
 
 jobs:
   test:
@@ -20,6 +21,8 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
       - name: Install dependencies
         run: pip install pytest pytest-cov
