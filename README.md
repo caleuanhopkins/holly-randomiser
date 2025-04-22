@@ -3,7 +3,7 @@
 A simple script to help introduce more character randomisation with Weappy's upcoming [Hollywood Animal](https://weappy-studio.com/hollywood-animal/) strategy game. 
 
 <!-- README.md -->
-+ [![cov](https://caleuanhopkins.github.io/holly-randomiser/badges/coverage.svg)](https://github.com/caleuanhopkins/holly-randomiser/actions)
+[![pycoverage workflow](https://github.com/caleuanhopkins/holly-randomiser/actions/workflows/python.yml/badge.svg?branch=main)](https://github.com/caleuanhopkins/holly-randomiser/actions/workflows/python.yml)
 
 <a href="https://www.buymeacoffee.com/caleuanhopkins"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=caleuanhopkins&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 

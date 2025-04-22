@@ -20,6 +20,7 @@ jobs:
           cov-threshold-single: 85
           cov-threshold-total: 90
           async-tests: true
+          requirements-file: requirements.txt
           poetry-version: 1.4.2
           package-extras: dev,tests
           github_token: ${{ secrets.README_TOKEN }}
