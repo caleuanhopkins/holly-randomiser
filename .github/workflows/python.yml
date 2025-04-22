@@ -1,5 +1,7 @@
 name: pycoverage workflow
 
+on: [pull_request, commit]
+
 jobs:
   tests:
     runs-on: ubuntu-latest
